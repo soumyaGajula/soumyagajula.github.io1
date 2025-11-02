@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soumya Gajula - Cybersecurity Portfolio</title>
+  <meta name="description" content="Cybersecurity Portfolio of Soumya Gajula | Digital Forensics | AI Projects | B.Tech CSE, Geethanjali College of Engineering and Technology.">
+  <meta name="keywords" content="Soumya Gajula, Cybersecurity, AI, Blockchain, Penetration Testing, Deepfake Detection, Portfolio, Security Projects">
+  <meta name="author" content="Soumya Gajula">
+  <style>
+    :root {
+      --c-bg: #121212;
+      --c-surf: #1e272e;
+      --c-accent: #ffd600;
+      --c-accent-dark: #f9a825;
+      --c-nav: #263238;
+      --c-btn: #37474f;
+      --c-btn-hover: #ffd600;
+      --c-btn-txt: #263238;
+      --c-text: #e0e0e0;
+      --ff: 'Segoe UI', Arial, sans-serif;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--ff);
+      background: var(--c-bg);
+      color: var(--c-text);
+      margin: 0; padding: 0;
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+    header {
+      background: linear-gradient(315deg, #0f2027 0%, #203a43 74%, #2c5364 100%);
+      padding: 2rem 1rem 1.2rem 1rem;
+      text-align: center;
+      color: var(--c-accent-dark);
+      box-shadow: 0 3px 24px #0007;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 { margin: 0; font-size: 2.5rem; font-weight: 900; }
+    header p { color: var(--c-text); margin-top: .45rem; }
+    nav {
+      background-color: var(--c-nav);
+      text-align: center;
+      padding: .65rem .5rem;
+      box-shadow: 0 2px 16px #0003;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    nav button {
+      background: var(--c-btn);
+      color: var(--c-accent);
+      border: none;
+      margin: 0 10px;
+      padding: .56rem 1.35rem;
+      font-size: 1.07rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all .22s;
+      font-weight: 600;
+      letter-spacing: .7px;
+    }
+    nav button:hover, nav button.active {
+      background: var(--c-btn-hover);
+      color: var(--c-btn-txt);
+    }
+    main {
+      max-width: 860px;
+      width: 95vw;
+      margin: 2rem auto;
+      flex: 1;
+      min-height: 60vh;
+    }
+    section {
+      background-color: var(--c-surf);
+      padding: 1.3rem 1.6rem;
+      border-radius: 10px;
+      box-shadow: 0 0 18px #0f082844;
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(15px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      display: none;
+    }
+    section.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    ul { padding-left: 1.2rem; }
+    ul li { margin-bottom: .57rem; line-height: 1.5; }
+    .skills span {
+      display: inline-block;
+      background: var(--c-btn);
+      padding: .41rem .92rem;
+      margin: .3rem .42rem .3rem 0;
+      border-radius: 4px;
+      color: var(--c-accent);
+      font-weight: 600;
+    }
+    a { color: var(--c-accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: .8rem 1rem;
+      background-color: var(--c-nav);
+      color: #bbb;
+      font-size: 0.93rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    hr { border: 0; border-top: 1.2px solid #ffd70028; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SOUMYA GAJULA</h1>
+    <p>+91 8790094401 | <a href="mailto:soumyagajula337@gmail.com">soumyagajula337@gmail.com</a></p>
+    <p>B.Tech CSE | Geethanjali College of Engineering and Technology</p>
+  </header>
+  <nav>
+    <button class="active" onclick="showSection('education', this)">Education</button>
+    <button onclick="showSection('skills', this)">Skills</button>
+    <button onclick="showSection('internship', this)">Internship</button>
+    <button onclick="showSection('projects', this)">Projects</button>
+    <button onclick="showSection('achievements', this)">Achievements</button>
+    <button onclick="showSection('contact', this)">Contact</button>
+  </nav>
+  <main>
+    <section id="education" class="active">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Geethanjali College of Engineering and Technology</strong> (B.Tech CSE) | Expected 2026 | CGPA: 7.01 | Hyderabad, Telangana</li>
+        <li><strong>Sri Gayatri Junior College</strong> | 2020 - 2022 | Intermediate MPC: 77% | Hyderabad, Telangana</li>
+        <li><strong>Bhashyam High School</strong> | 2020 | SSC: 10 GPA | Hyderabad, Telangana</li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <p><strong>Languages:</strong> Python, HTML, CSS, JavaScript, Java, Penetration Testing</p>
+      <p><strong>Technologies / Frameworks:</strong> Vulnerability Scanning, Blockchain (Ethereum, Solidity, Truffle), React.js, IPFS, PyTorch, Gradio, OpenCV</p>
+      <p><strong>Coursework:</strong> Data Structures and Algorithms, OOP, DBMS, Operating Systems, Computer Networks</p>
+      <div class="skills">
+        <span>Python</span><span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Penetration Testing</span><span>Blockchain</span><span>Cybersecurity</span>
+      </div>
+    </section>
+    <section id="internship">
+      <h2>Internship</h2>
+      <p><strong>Cybersecurity Intern, Supraja Technologies</strong> | May 2025 – July 2025</p>
+      <ul>
+        <li>Developed a Python-based simulator for phishing and baiting attack awareness.</li>
+        <li>Integrated email spoofing, link tracking, and user behavior analysis to improve security awareness.</li>
+        <li>Analyzed real-world cyber threat scenarios to train users in identifying and mitigating vulnerabilities.</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+        <h3>Deepfake Detection Using Image Authenticity Percentage (September 2025)</h3>
+        <ul>
+          <li>Built a deep learning system using CNN ResNeXt, PyTorch, OpenCV to detect and quantify manipulated regions in images.</li>
+          <li>Integrated Grad-CAM and Gradio for visualization and real-time web interface.</li>
+        </ul>
+      </div>
+      <hr>
+      <div>
+        <h3>CertLedger: Decentralized Chain for Authenticity Assurance (Present)</h3>
+        <ul>
+          <li>Developed a blockchain-based certificate verification system for academic credentials using Ethereum, Solidity, React, Truffle, MetaMask, and IPFS.</li>
+          <li>Designed role-based access, QRID verification, and immutable blockchain records for secure and tamper-proof digital certificates.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Skillup - Blockchain Developer Training</li>
+        <li>Infosys - Fundamentals of Cryptography</li>
+        <li>Oracle - Java Programming</li>
+        <li>CISCO - Introduction to Cybersecurity</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:soumyagajula337@gmail.com">soumyagajula337@gmail.com</a></p>
+      <p>Phone: +91 8790094401</p>
+      <p>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <!-- Update to Soumya's actual GitHub and LinkedIn -->
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Soumya Gajula | Geethanjali College of Engineering and Technology
+  </footer>
+  <script>
+    function showSection(id, btn) {
+      const sections = document.querySelectorAll("main section");
+      const buttons = document.querySelectorAll("nav button");
+      sections.forEach(sec => {
+        if (sec.id === id) {
+          sec.style.display = "block";
+          setTimeout(() => sec.classList.add("active"), 10);
+        } else {
+          sec.classList.remove("active");
+          setTimeout(() => (sec.style.display = "none"), 500);
+        }
+      });
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    }
+  </script>
+</body>
+</html>
